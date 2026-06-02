@@ -1,0 +1,119 @@
+question,answer
+start,Hello! How can I help you?
+hi,Hello! How can I help you?
+hello,Hello! How can I help you?
+hey,Hello! How can I help you?
+good morning,Hello! How can I help you?
+good evening,Hello! How can I help you?
+python,Python is a high-level interpreted programming language.
+what is python,Python is a high-level interpreted programming language.
+define python,Python is a high-level interpreted programming language.
+
+variable,A variable is used to store data in memory.
+what is variable,A variable is used to store data in memory.
+
+datatype,Data types define the type of data stored in variables.
+what is datatype,Data types define the type of data stored in variables.
+
+if statement,If statement is used for decision making in Python.
+what is if statement,If statement is used for decision making in Python.
+
+for loop,A for loop is used to iterate over a sequence.
+what is for loop,A for loop is used to iterate over a sequence.
+
+while loop,A while loop repeats execution until condition becomes false.
+what is while loop,A while loop repeats execution until condition becomes false.
+
+loop,A loop is used to execute a block of code multiple times.
+what is loop,A loop is used to execute a block of code multiple times.
+
+break statement,Break is used to exit a loop.
+what is break,Break is used to exit a loop.
+
+continue statement,Continue skips the current iteration of a loop.
+what is continue,Continue skips the current iteration of a loop.
+
+function,A function is a reusable block of code.
+what is function,A function is a reusable block of code.
+define function,A function is a reusable block of code.
+
+return,A return statement sends output from a function.
+what is return,A return statement sends output from a function.
+
+list,A list is an ordered and mutable collection.
+what is list,A list is an ordered and mutable collection.
+
+tuple,A tuple is an ordered and immutable collection.
+what is tuple,A tuple is an ordered and immutable collection.
+
+set,A set is an unordered collection of unique items.
+what is set,A set is an unordered collection of unique items.
+
+dictionary,A dictionary stores key-value pairs.
+what is dictionary,A dictionary stores key-value pairs.
+
+class,A class is a blueprint for creating objects.
+what is class,A class is a blueprint for creating objects.
+
+object,An object is an instance of a class.
+what is object,An object is an instance of a class.
+
+constructor,A constructor initializes objects automatically.
+what is constructor,A constructor initializes objects automatically.
+
+inheritance,Inheritance allows a class to acquire properties of another class.
+what is inheritance,Inheritance allows a class to acquire properties of another class.
+
+polymorphism,Polymorphism means one interface many forms.
+what is polymorphism,Polymorphism means one interface many forms.
+
+encapsulation,Encapsulation means wrapping data and methods together.
+what is encapsulation,Encapsulation means wrapping data and methods together.
+
+abstraction,Abstraction hides implementation details.
+what is abstraction,Abstraction hides implementation details.
+
+exception handling,Exception handling handles runtime errors in Python.
+what is exception handling,Exception handling handles runtime errors in Python.
+
+try except,Try and except are used for handling errors in Python.
+what is try except,Try and except are used for handling errors in Python.
+
+numpy,NumPy is a library for numerical computing.
+what is numpy,NumPy is a library for numerical computing.
+
+pandas,Pandas is a Python library for data analysis.
+what is pandas,Pandas is a Python library for data analysis.
+
+dataframe,A DataFrame is a tabular data structure in Pandas.
+what is dataframe,A DataFrame is a tabular data structure in Pandas.
+
+machine learning,Machine learning enables systems to learn from data.
+what is machine learning,Machine learning enables systems to learn from data.
+
+linear regression,Linear regression predicts continuous values.
+what is linear regression,Linear regression predicts continuous values.
+
+logistic regression,Logistic regression is used for classification problems.
+what is logistic regression,Logistic regression is used for classification problems.
+
+decision tree,A decision tree predicts using question-based splits.
+what is decision tree,A decision tree predicts using question-based splits.
+
+random forest,Random Forest combines many decision trees.
+what is random forest,Random Forest combines many decision trees.
+
+knn,KNN predicts using nearest neighbors.
+what is knn,KNN predicts using nearest neighbors.
+
+svm,Support Vector Machine finds best separating hyperplane.
+what is svm,Support Vector Machine finds best separating hyperplane.
+
+k means,K-Means clusters data into groups.
+what is k means,K-Means clusters data into groups.
+
+accuracy,Accuracy measures correct predictions out of total predictions.
+what is accuracy,Accuracy measures correct predictions out of total predictions.
+
+confusion matrix,Confusion matrix evaluates classification performance.
+what is confusion matrix,Confusion matrix evaluates classification performance.

@@ -1,0 +1,16 @@
+pandas
+pandas
+numpy
+constructor
+what is pandas
+"c:\program files\python313\python.exe" c:/users/hp/onedrive/desktop/ml_project/chatbot.py
+what is python
+what is pyhon
+python
+python
+python
+python
+json
+machine learning
+what is json
+"C:\Program Files\Python313\python.exe" c:/Users/hp/OneDrive/Desktop/ml_project/app.py

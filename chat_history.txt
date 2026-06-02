@@ -1,0 +1,56 @@
+
+[2026-06-02 12:00:57.866158]
+You: "c:\program files\python313\python.exe" c:/users/hp/onedrive/desktop/ml_project/chatbot.py
+Bot: Python is a high-level interpreted programming language.
+
+[2026-06-02 12:01:13.248251]
+You: python
+Bot: Python is a high-level interpreted programming language.
+
+[2026-06-02 12:01:23.508308]
+You: list
+Bot: A list is an ordered and mutable collection.
+
+[2026-06-02 12:21:24.654177]
+You: python
+Bot: Python is a high-level interpreted programming language.
+
+[2026-06-02 12:21:35.494522]
+You: pandas
+Bot: Pandas is a Python library for data analysis.
+
+[2026-06-02 12:21:40.235961]
+You: loop
+Bot: A loop is used to execute a block of code multiple times.
+
+[2026-06-02 12:21:54.125927]
+You: exception handling
+Bot: Exception handling handles runtime errors in Python.
+
+[2026-06-02 12:38:00.701800]
+You: json
+Bot: Hello! How can I help you?
+
+[2026-06-02 12:42:55.210849]
+You: python
+Bot: Python is a high-level interpreted programming language.
+
+[2026-06-02 12:55:12.797192]
+You: "C:\Program Files\Python313\python.exe" c:/Users/hp/OneDrive/Desktop/ml_project/chatbot.py
+Bot: Python is a high-level interpreted programming language.
+
+[2026-06-02 12:55:31.617171]
+You: machine learning
+Bot: Machine learning enables systems to learn from data.
+
+[2026-06-02 12:55:37.110472]
+You: linear regression
+Bot: Linear regression predicts continuous values.
+
+[2026-06-02 12:59:22.183501]
+You: machine learning
+Bot: Machine learning enables systems to learn from data.
+
+[2026-06-02 12:59:29.016535]
+You: pandas
+Bot: Pandas is a Python library for data analysis.
