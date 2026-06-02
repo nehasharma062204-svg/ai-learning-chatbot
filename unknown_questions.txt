@@ -14,3 +14,5 @@ json
 machine learning
 what is json
 "C:\Program Files\Python313\python.exe" c:/Users/hp/OneDrive/Desktop/ml_project/app.py
+hlo
+how are you

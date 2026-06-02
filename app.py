@@ -17,7 +17,7 @@ X = df["question"]
 y = df["answer"]
 
 # ==========================================
-# TF-IDF
+# TF-IDF Vectorization
 # ==========================================
 
 vectorizer = TfidfVectorizer(
@@ -28,7 +28,7 @@ vectorizer = TfidfVectorizer(
 X_vectorized = vectorizer.fit_transform(X)
 
 # ==========================================
-# Logistic Regression
+# Train Logistic Regression
 # ==========================================
 
 model = LogisticRegression(
@@ -114,6 +114,29 @@ def clean_text(text):
 
 def get_response(user_input):
 
+    # ----------------------------------
+    # Greeting Handling
+    # ----------------------------------
+
+    greetings = [
+        "hi",
+        "hello",
+        "hey",
+        "good morning",
+        "good evening"
+    ]
+
+    if user_input.lower().strip() in greetings:
+
+        return (
+            "Hello! How can I help you? 😊",
+            1.0
+        )
+
+    # ----------------------------------
+    # Text Cleaning
+    # ----------------------------------
+
     cleaned_input = clean_text(
         user_input
     )
@@ -167,9 +190,7 @@ st.set_page_config(
     layout="centered"
 )
 
-st.title(
-    "🤖 AI Learning ChatBot"
-)
+st.title("🤖 AI Learning ChatBot")
 
 st.write(
     "Ask me about Python, OOP, NumPy, Pandas and Machine Learning."
@@ -191,7 +212,7 @@ if st.button("Send"):
             user_input
         )
 
-        if answer == "I don't know about this topic yet.":
+        if confidence == 0:
 
             st.warning(answer)
 
