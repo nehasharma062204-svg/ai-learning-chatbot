@@ -38,51 +38,7 @@ model = LogisticRegression(
 model.fit(X_vectorized, y)
 
 # ==========================================
-# Main Topics
-# ==========================================
-
-main_topics = [
-    "python",
-    "variable",
-    "datatype",
-    "if statement",
-    "for loop",
-    "while loop",
-    "loop",
-    "break",
-    "continue",
-    "function",
-    "return",
-    "list",
-    "tuple",
-    "set",
-    "dictionary",
-    "class",
-    "object",
-    "constructor",
-    "inheritance",
-    "polymorphism",
-    "encapsulation",
-    "abstraction",
-    "exception handling",
-    "try except",
-    "numpy",
-    "pandas",
-    "dataframe",
-    "machine learning",
-    "linear regression",
-    "logistic regression",
-    "decision tree",
-    "random forest",
-    "knn",
-    "svm",
-    "k means",
-    "accuracy",
-    "confusion matrix"
-]
-
-# ==========================================
-# Text Cleaning
+# Text Cleaning Function
 # ==========================================
 
 def clean_text(text):
@@ -109,41 +65,75 @@ def clean_text(text):
     return text
 
 # ==========================================
-# Response Function
+# Create Topics Automatically
+# ==========================================
+
+main_topics = []
+
+for question in df["question"]:
+
+    cleaned = clean_text(question)
+
+    if cleaned not in main_topics:
+
+        main_topics.append(cleaned)
+
+# ==========================================
+# ChatBot Response Function
 # ==========================================
 
 def get_response(user_input):
 
-    # ----------------------------------
+    user_input = user_input.lower().strip()
+
+    # --------------------------------------
     # Greeting Handling
-    # ----------------------------------
+    # --------------------------------------
 
     greetings = [
         "hi",
         "hello",
         "hey",
+        "hii",
+        "hiii",
         "good morning",
+        "good afternoon",
         "good evening"
     ]
 
-    if user_input.lower().strip() in greetings:
+    if user_input in greetings:
 
         return (
             "Hello! How can I help you? 😊",
             1.0
         )
 
-    # ----------------------------------
-    # Text Cleaning
-    # ----------------------------------
+    # --------------------------------------
+    # Exit Handling
+    # --------------------------------------
+
+    if user_input in [
+        "exit",
+        "quit",
+        "bye"
+    ]:
+
+        return (
+            "Goodbye! 👋",
+            1.0
+        )
+
+    # --------------------------------------
+    # Clean Text
+    # --------------------------------------
 
     cleaned_input = clean_text(
         user_input
     )
 
-    # ----------------------------------
+    # --------------------------------------
     # Fuzzy Matching
-    # ----------------------------------
+    # --------------------------------------
 
     match = process.extractOne(
         cleaned_input,
@@ -159,13 +149,17 @@ def get_response(user_input):
 
     matched_topic = match[0]
 
-    # ----------------------------------
-    # ML Prediction
-    # ----------------------------------
+    # --------------------------------------
+    # Convert To Vector
+    # --------------------------------------
 
     user_vector = vectorizer.transform(
         [matched_topic]
     )
+
+    # --------------------------------------
+    # Predict Answer
+    # --------------------------------------
 
     prediction = model.predict(
         user_vector
@@ -190,7 +184,9 @@ st.set_page_config(
     layout="centered"
 )
 
-st.title("🤖 AI Learning ChatBot")
+st.title(
+    "🤖 AI Learning ChatBot"
+)
 
 st.write(
     "Ask me about Python, OOP, NumPy, Pandas and Machine Learning."
@@ -220,6 +216,13 @@ if st.button("Send"):
 
             st.success(answer)
 
-            st.caption(
-                f"Confidence: {confidence:.2f}"
-            )
+            # Confidence sirf ML answers ke liye
+
+            if answer not in [
+                "Hello! How can I help you? 😊",
+                "Goodbye! 👋"
+            ]:
+
+                st.caption(
+                    f"Confidence: {confidence:.2f}"
+                )
